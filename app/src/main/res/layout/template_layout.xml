@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#1CB3FF"
+
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/StringTitle"
+        android:id="@+id/tapPreviewString"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TopLeftButton"
+        android:textAlignment="viewStart"
+        android:id="@+id/button1"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TopRightButton"
+        android:id="@+id/button2"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BottomLeftButton"
+        android:id="@+id/button3"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BottomRightButton"
+        android:id="@+id/button4"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    Space Bar                                 Back Space     "
+        android:id="@+id/SpaceBarButton"
+        android:layout_above="@+id/NumbersButton"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/TapString"
+        android:id="@+id/tapString"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/SpaceBarButton"
+        android:layout_toLeftOf="@+id/tapPreviewString"
+        android:layout_toStartOf="@+id/tapPreviewString" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/PressHoldString"
+        android:id="@+id/pressHoldString"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/SpaceBarButton"
+        android:layout_alignRight="@+id/NumbersButton"
+        android:layout_alignEnd="@+id/NumbersButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextBox"
+        android:layout_below="@+id/tapPreviewString"
+        android:layout_alignLeft="@+id/SpaceBarButton"
+        android:layout_alignStart="@+id/SpaceBarButton"
+        android:layout_alignRight="@+id/SpaceBarButton"
+        android:layout_alignEnd="@+id/SpaceBarButton"
+        android:layout_above="@+id/tapString" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NumbersButton"
+        android:id="@+id/NumbersButton"
+        android:paddingRight="120dp"
+        android:paddingLeft="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>

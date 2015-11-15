@@ -1,0 +1,17 @@
+<resources>
+
+
+    // Edit here only for Foreign Lanauges
+    <string name="app_name">Swipe To Text</string>
+    <string name="action_settings">Settings</string>
+    <string name="StringTitle">Tap to Preview</string>
+    <string name="TopLeftButton">ABCDEF</string>
+    <string name="TopRightButton">GHIJKL</string>
+    <string name="BottomLeftButton">MNOPQRS</string>
+    <string name="BottomRightButton">TUVWXYZ</string>
+    <string name="TapString">Tap</string>
+    <string name="PressHoldString"><![CDATA[Press & Hold]]></string>
+    <string name="NumbersButton">Numbers</string>
+    <string name="SpaceBackButton">Space Bar Back Space</string>
+
+</resources>
